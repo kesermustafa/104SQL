@@ -1,12 +1,11 @@
  -- 
  CREATE TABLE ogrenciler1
  (
-	ogrenci_no char(7),
-	isim varchar(20), 
-	soyisim varchar(25), 
+	ogrenci_no char(7), -- uzunlugunu bildigimiz stringler icin CHAR
+	isim varchar(20), -- uzunlugunu bilmedigiz strinler icin VARCHAR
+	soyisim varchar(25), -- 
 	not_ortalamasi real,  -- ondalikli sayilar kullanilir doube gibi
-	kayit_tarihi date
- );
+	kayit_tarihi date);
  
  --VAROLAN Tablodan yeni bir tablo ousturma
  CREATE TABLE ogrenci_notlari
