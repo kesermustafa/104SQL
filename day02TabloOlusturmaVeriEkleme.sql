@@ -220,7 +220,10 @@ INSERT INTO ogrenciler6 VALUES(127, 'Mustafa Bak', 'Can',99);
 INSERT INTO ogrenciler6 VALUES(127, 'Mustafa Bak', 'Ali', 99);
   
     select * from ogrenciler6;
-  
+  	select * from urunler;
+	select * from ogrenciler5;
+	select * from ogrenciler4;
+	select * from ogrenciler3;
   
   
   
