@@ -230,6 +230,14 @@ INSERT INTO markalar VALUES(104, 'Nike', 19000);
 Select marka_id,calisan_sayisi from markalar
 Where marka_isim in (Select isyeri from calisanlar2 where sehir='Ankara')
   
+  select isim, isyeri, maas from calisanlar2 where isyeri in (select marka_isim from markalar where calisan_sayisi>10000 );
+  
+  -- calisan sayiyi 10000 den fazla olan sirketlerde maasi 1000 uzeri olan personelin isim isyeri maas bilgisi listele
+  select isim, isyeri, maas from calisanlar2 where maas>1000 and isyeri in (select marka_isim from markalar where calisan_sayisi>10000 );
+  
+  
+  
+  
   
   -- 			AGGREGATE METOT KULLANIMI
 /*Aggregate Metotlari (SUM,COUNT, MIN, MAX, AVG) Subquery içinde kullanilabilir.
