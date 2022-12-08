@@ -254,8 +254,9 @@ SELECT LOWER(kelime) FROM kelimeler;
 
 SELECT INITCAP(kelime) FROM kelimeler;
 
+select * from personel2
 
-
+SELECT LOWER(title), UPPER(isim) FROM personel2;
 
 
 
