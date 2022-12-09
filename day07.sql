@@ -70,9 +70,9 @@ SELECT * FROM maas ORDER BY maas DESC
 OFFSET 1 FETCH NEXT 1 ROW ONLY
 
 -- Maas tablosundan en düşük dördüncü maası listeleyiniz
-SELECT * FROM maas ORDER BY maas offset 3 LIMIT 2
+SELECT * FROM maas ORDER BY maas offset 3 LIMIT 1
 
-
+\
 CREATE TABLE personel3  (
 id int,
 isim varchar(50),  sehir varchar(50),  maas int,  
@@ -146,7 +146,7 @@ TYPE int USING(maas::varchar(30))
 	-->	TRANSACTION (BEGIN - SAVEPOINT - ROLLBACK - COMMIT)
 	Transaction baslatmak icin BEGIN komutu kullanmamiz gerekir ve Transaction'i sonlandirmak icin
 	COMMIT komutunu calistirmaliyiz.
-*/
+*/\
 
  CREATE TABLE ogrenciler7(
 id serial,				-- Serial data turu otomatik olarak birden baslayarak sirali olarak sayi atamasi yapar
